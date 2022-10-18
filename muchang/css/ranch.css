@@ -1,0 +1,92 @@
+*{
+	margin: 0 auto;
+}
+.content{
+	position: relative;
+	width: 640px;
+	height: 1030px;
+	background-image: url(../img/效果参考（没画羊圈版：）.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+.cover{
+	position: absolute;
+	width: 510px;
+	height: 670px;
+	margin-top: 100px;
+	margin-left: 100px;
+	background-color: #80b11a;
+}
+.bad-1{
+	position: absolute;
+	width: 130px;
+	height: 120px;
+	margin-top: 23px;
+	margin-left: 115px;
+	transform: rotateY(180deg);   /* 水平镜像翻转 */
+}
+.bad-2{
+	position: absolute;
+	width: 155px;
+	height: 132px;
+	margin-top: 70px;
+	margin-left: 250px;
+	transform: rotateY(180deg);   /* 水平镜像翻转 */
+}
+.bad-3{
+	position: absolute;
+	width: 130px;
+	height: 110px;
+	margin-top: 470px;
+	margin-left: 55px;
+}
+.bad-1,.bad-2,.bad-3{
+	background-image: url(../img/坏毛羊.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+}
+.good-1{
+	position: absolute;
+	width: 170px;
+	height: 145px;
+	margin-top: 210px;
+}
+.good-2{
+	position: absolute;
+	width: 195px;
+	height: 160px;
+	margin-top: 240px;
+	margin-left: 300px;
+	transform: rotateY(180deg);   /* 水平镜像翻转 */
+}
+.good-3{
+	position: absolute;
+	width: 120px;
+	height: 100px;
+	margin-top: 565px;
+	margin-left: 280px;
+}
+.good-1,.good-2,.good-3{
+	background-image: url(../img/有毛羊.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+}
+.none-1{
+	position: absolute;
+	width: 155px;
+	height: 130px;
+	margin-top: 340px;
+	margin-left: 145px;
+}
+.none-1{
+	background-image: url(../img/无毛羊.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+}
