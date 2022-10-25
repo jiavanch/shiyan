@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>羊羊de衣</title>
+		<style>
+			
+			#main{
+				
+		
+			width:1024px;
+			height: 768px;
+				background-image: url(img/IMG_8668.PNG);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				background-position: center center;
+			}
+			.movetitle{
+				width: 650px;
+				height:250px;
+				margin: 0px 100px;
+			position: relative;
+			background-image: url(img/IMG_8669.PNG);
+			background-size: contain;
+			background-repeat: no-repeat;
+			
+			animation: mymove 3s ;}
+			@keyframes mymove{
+				from{top:-150px;}
+				to{top:0px}
+			}
+			.picrotation{
+				width: 1444px;
+				height: 1444px;
+				margin:0px 250px;
+				background-image: url(img/IMG_8667.PNG);
+				border-radius: 200px;
+				animation: picrotation 15s linear 0s infinite;
+			}
+			@keyframes picrotation{
+				from{transform: rotate(0deg);} 
+				to{transform: rotate(360deg);}
+			}
+		 .picrotation:active{
+				animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body id="main">
+	
+		<div class="movetitle">  </div>
+        <a href="http://www.baidu.com"target="_parent"><div class="picrotation">  </div></a>
+        
+        
+	</body>
+</html>
