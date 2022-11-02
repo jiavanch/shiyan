@@ -8,54 +8,76 @@
 				display: flex;
 				flex-direction: column;
 				height: 100%;
+					
 			}
 			#main{
-			min-width: 640px;
-			height: 100%;
-			margin: auto auto;
-				background-image: url(img/IMG_8668.PNG);
-				background-repeat: no-repeat;
-				background-size: contain;
-				background-position: center 40%;
+				min-width: 640px;
+				height: 100%;
+				
+				margin: 0px auto;
+			background-image: url(img/背景_画板 1 副本.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 70% center; 
+			
 			}
-			.movetitle{
+			.yun{
+				height: 100%;
 				width: 100%;
-				height:50%;
 				margin: auto auto;
+			background-image: url(img/云.png);
+			
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center; 
+			
+			}
+			
+			.biaotipai{
+			width: 100%;
+			height: 33%;
+			margin: 0px auto;
 			position: relative;
-			background-image: url(img/IMG_8669.PNG);
+			background-image: url(img/标题牌.png);
 			background-size: contain;
 			background-repeat: no-repeat;
-			background-position: center 0;
+			background-position: center center;
+			z-index: 3;
 			animation: mymove 3s ;}
 			@keyframes mymove{
 				from{top:-150px;}
-				to{top:0px}
-			}
+				to{top:0px};
+				}
 			.picrotation{
-				width: 600px;
-				height: 600px;
+				width: 800px;
+				height: 800px;
 				background-size: contain;
-			margin: 35% auto;
-				background-image: url(img/IMG_8667.PNG);
+			    margin: 20% auto;
+				background-image: url(img/可转星球.png);
 				background-repeat: no-repeat;
-				border-radius: 50%;
-				animation: picrotation 15s linear 0s infinite;
+				border-radius: 400px;
+				
+				animation: picrotation 5s ease-out 0s 1;
+			
 			}
 			@keyframes picrotation{
-				from{transform: rotate(0deg);} 
-				to{transform: rotate(360deg);}
+				from{transform: rotate(0deg);
+				} 
+				to{transform: rotate(360deg);
+				}
 			}
 		 .picrotation:active{
 				animation-play-state: paused;
 			}
 		</style>
 	</head>
-	<body >
-	<div id=main>
-		<div class="movetitle">  </div>
-        <a href="https://jiavanch.github.io/shiyan/sy2/map"><div class="picrotation">  </div></a>
-        </div>
-        
+	<body>
+		<div id=main>
+	<div class="yun">
+	
+    <div class="biaotipai"></div>
+    <a href="http://www.baidu.com"target="_parent"><div class="picrotation"></div></a>
+    </div>	
+    </div>
 	</body>
 </html>
