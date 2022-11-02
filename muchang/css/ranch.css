@@ -1,47 +1,38 @@
 *{
-	margin: 0 auto;
+	height: 100%;
+	width: 100%;
 }
 .content{
-	position: absolute;
-	width: 640px;
-	height: 1030px;
-	background-image: url(../img/效果参考（没画羊圈版：）.jpg);
+	/* position: fixed; */
+	height: 100%;
+	background-image: url(../img/86284335dffa8746ff1bd2609db9d1b.png);
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
-}
-.cover{
-	position:absolute;
-	width: 640px;
-	height: 670px;
-	margin-top: 100px;
-	background-color: #80b11a;
+	background-position: center 0;
+	background-size: 100% ;
+
 }
 .bad-1{
 	position: absolute;
-	width: 130px;
-	height: 120px;
-	margin-top: 23px;
-	margin-left: 165px;
+	width: 20%;
+	height: 10%;
+	top: 15%;
+	left: 10%;
 	transform: rotateY(180deg);
 }
 .bad-2{
 	position: absolute;
-	width: 155px;
-	height: 132px;
-	margin-top: 70px;
-	margin-left: 300px;
+	width: 30%;
+	height: 15%;
+	top: 25%;
+	left: 20%;
 	transform: rotateY(180deg);
 }
 .bad-3{
 	position: absolute;
-	width: 130px;
-	height: 110px;
-	margin-top: 470px;
-	margin-left: 105px;
+	width: 30%;
+	height: 15%;
+	top: 65%;
+	left: 50%;
 }
 .bad-1,.bad-2,.bad-3{
 	background-image: url(../img/坏毛羊.png);
@@ -51,27 +42,27 @@
 }
 .good-1{
 	position: absolute;
-	width: 160px;
-	height: 135px;
-	margin-top: 210px;
-	margin-left: 50px;
+	width: 30%;
+	height: 15%;
+	top: 35%;
+	left: 50%;
 	z-index: 10;
 	user-select: none;
 }
 .good-2{
 	position: absolute;
-	width: 195px;
-	height: 160px;
-	margin-top: 240px;
-	margin-left: 350px;
+	width: 20%;
+	height: 10%;
+	top: 45%;
+	left: 30%;
 	transform: rotateY(180deg);   /* 水平镜像翻转 */
 }
 .good-3{
 	position: absolute;
-	width: 120px;
-	height: 100px;
-	margin-top: 565px;
-	margin-left: 330px;
+	width: 35%;
+	height: 18%;
+	top: 18%;
+	left: 60%;
 }
 .good-1,.good-2,.good-3{
 	background-image: url(../img/有毛羊.png);
@@ -81,10 +72,10 @@
 }
 .none-1{
 	position: absolute;
-	width: 155px;
-	height: 130px;
-	margin-top: 340px;
-	margin-left: 195px;
+	width: 20%;
+	height: 10%;
+	top: 55%;
+	left: 20%;
 }
 .none-1{
 	background-image: url(../img/无毛羊.png);
