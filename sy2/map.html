@@ -3,13 +3,23 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>地图</title>
+		    <!--<script type="text/javascript">
+				function hello(){
+        			top:55%;
+      				left: 55%;
+      				width: 50%;
+      				height: 47%;
+      }
+
+    </script>-->
 		<style type="text/css">
 		*{
+			margin:0px auto;
 			height: 100%;
-			width: 100%;
+			
 		}
       	#main{
-      		height:100%;
+      		width: 640px;
       		background-image: url("res/mapmap.PNG");
 			background-repeat:no-repeat;
 			background-size:100%;
@@ -21,7 +31,7 @@
         position: absolute;	
       	top:75%;
       	left: 68%;
-      	width: 30%;
+      	width: 25%;
       	height: 27%;
       }
       	.image2 {
@@ -40,13 +50,13 @@
       }
       .image4{
       	position: absolute;
-      	top:0%;
+      	top:4%;
       	left:65%;
       	width: 33%;
       	height: 37%;
       }
       .image5{
-      	position: relative;
+      	position: absolute;
       	top:-9%;
       	left:5%;
       	width: 35%;
@@ -55,12 +65,12 @@
     </style>
 	</head>
 	<body>
-	<div id="main">
-		<div class="image1"><a href="https://jiavanch.github.io/shiyan/muchang/ranch"><img src="res/muchang.PNG" /></a> </div>
+	<div id="main" >
+		<div class="image1" ><a href="https://jiavanch.github.io/shiyan/muchang/ranch"><img src="res/muchang.PNG" onmouseover="hello()" /></a> </div>
 		<div class="image2"><img src="res/chulichang.PNG" /></div>
 		<div class="image3"><img src="res/fengren.PNG" /></div>
 		<div class="image4"><img src="res/yinranchang.PNG" /></div>
-		<div class="image5"><img src="res/puyuan.PNG"/></div>
+		<div class="image5"><img src="res/puyuan.PNG" /></div>
 	</div>
 	</body>
 </html>
