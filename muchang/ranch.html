@@ -4,18 +4,97 @@
 		<meta charset="utf-8">
 		<title>ranch</title>
 		<link rel="stylesheet" href="css/ranch.css">
+		<link rel="stylesheet" href="js/ranch.js">
 	</head>
 	<body>
 		<div class="content">
-			<div class="cover">
+			<div class="cover" ref="cover">
 				<div class="bad-1"></div>
 				<div class="bad-2"></div>
 				<div class="bad-3"></div>
-				<div class="good-1"></div>
-				<div class="good-2"></div>
-				<div class="good-3"></div>
+				<div class="good-1" draggable="true" id="good-1"></div>
+				<div class="good-2" draggable="true" id="good-2"></div>
+				<div class="good-3" draggable="true" id="good-3"></div>
 				<div class="none-1"></div>
 			</div>
 		</div>
+		<script>
+			window.onload = function () {
+			      // 为box1绑定一个鼠标按下事件
+			      var good1 = document.getElementById("good-1");
+			      good1.onmousedown = function (event) {
+			        // 计算盒子的偏移量
+			        var offsetLeft1 = event.clientX;
+			        var offsetTop1 = event.clientY;
+			        // 为document绑定一个onmousemove事件，开始拖拽元素
+			        document.onmousemove = function (event) { 
+			          var left1 = event.clientX - offsetLeft1;
+			          var top1 = event.clientY - offsetTop1;
+			          good1.style.left = left1 + "px";
+			          good1.style.top = top1 + "px";
+			        };
+			        // 为document绑定一个鼠标松开事件，停止拖拽
+			        document.onmouseup = function () {
+			          // 取消document的onmousemove事件
+			          document.onmousemove = null;
+			          // 取消document的onmouseup事件
+			          document.onmouseup = null;
+			        };
+			        // 取消浏览器默认行为，避免一些全选状态（Ctrl+A）引发的Bug
+			        // return false;
+////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////
+					// 为box1绑定一个鼠标按下事件
+					var good2 = document.getElementById("good-2");
+					good2.onmousedown = function (event) {
+					  // 计算盒子的偏移量
+					  var offsetLeft = event.clientX;
+					  var offsetTop = event.clientY;
+					  // 为document绑定一个onmousemove事件，开始拖拽元素
+					  document.onmousemove = function (event) { 
+					    var left = event.clientX - offsetLeft;
+					    var top = event.clientY - offsetTop;
+					    good2.style.left = left + "px";
+					    good2.style.top = top + "px";
+					  };
+					  // 为document绑定一个鼠标松开事件，停止拖拽
+					  document.onmouseup = function () {
+					    // 取消document的onmousemove事件
+					    document.onmousemove = null;
+					    // 取消document的onmouseup事件
+					    document.onmouseup = null;
+					  };
+					  // 取消浏览器默认行为，避免一些全选状态（Ctrl+A）引发的Bug
+					  // return false;
+					};
+/////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////
+					// 为box1绑定一个鼠标按下事件
+					var good3 = document.getElementById("good-3");
+					good3.onmousedown = function (event) {
+					  // 计算盒子的偏移量
+					  var offsetLeft = event.clientX;
+					  var offsetTop = event.clientY;
+					  // 为document绑定一个onmousemove事件，开始拖拽元素
+					  document.onmousemove = function (event) { 
+					    var left = event.clientX - offsetLeft;
+					    var top = event.clientY - offsetTop;
+					    good3.style.left = left + "px";
+					    good3.style.top = top + "px";
+					  };
+					  // 为document绑定一个鼠标松开事件，停止拖拽
+					  document.onmouseup = function () {
+					    // 取消document的onmousemove事件
+					    document.onmousemove = null;
+					    // 取消document的onmouseup事件
+					    document.onmouseup = null;
+					  };
+					  // 取消浏览器默认行为，避免一些全选状态（Ctrl+A）引发的Bug
+					  return false;
+					};
+			      };
+			    };
+			
+		</script>
 	</body>
 </html>
