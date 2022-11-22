@@ -1,0 +1,89 @@
+*{
+	height: 100%;
+	width: 100%;
+}
+.content{
+	height:100%;
+   	background-image: url(../img/light.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position: center 0;
+	display: flex;
+	position: relative;
+}
+.bottom{
+	position: absolute;
+	top:0;
+}
+.ball1{
+	background-image: url(../img/ball.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	top:80%;
+    left:2%;
+  	width: 20%;
+ 	height: 20%;
+}
+.ball2{
+	position: absolute;
+	top:80%;
+    left:25%;
+  	width: 20%;
+ 	height: 20%;
+}
+.ball3{
+	position: absolute;
+	top:80%;
+    left:50%;
+  	width: 20%;
+ 	height: 20%;
+}
+.ball4{
+	position: absolute;
+	top:80%;
+    left:75%;
+  	width: 20%;
+ 	height: 20%;
+}
+.t{
+	position:absolute;
+	top:0;
+}
+.top{
+	position: absolute;
+	top:0;
+}
+/*.line1{
+	display: none;
+	position: absolute;
+	top:80%;
+    left:2%;
+  	width: 20%;
+ 	height: 20%;
+}*/
+.line2{
+	display: none;
+	position: absolute;
+	top:80%;
+    left:25%;
+  	width: 20%;
+ 	height: 20%;
+}
+.line3{
+	display: none;
+	position: absolute;
+	top:80%;
+    left:50%;
+  	width: 20%;
+ 	height: 20%;	
+}
+.line4{
+	display: none;
+	position: absolute;
+	top:80%;
+    left:75%;
+  	width: 20%;
+ 	height: 20%;	
+}
