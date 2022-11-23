@@ -4,26 +4,76 @@
 		<meta charset="utf-8">
 		<title>羊毛处理厂</title>
 		<script type="text/javascript">
-	function change(){
-		document.getElementsById("a").style.backgroundImage="";
-	}
-	
+//	function change(){
+//		document.getElementsById("ball1").style.backgroundImage="";
+//	}
+	function fall1(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes ball1{0%{top:80%;left:2%;}35%{top:55%;left:55%;}80%{top:40%;left:12%;}100%{top:35%;left: 33%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function fall2(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes ball2{0%{top:80%;left:25%;}35%{top:55%;left:55%;}80%{top:40%;left:12%;}100%{top:35%;left: 33%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function fall3(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes ball3{0%{top:80%;left:50%;}35%{top:55%;left:55%;}80%{top:40%;left:12%;}100%{top:35%;left: 33%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function fall4(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes ball4{0%{top:80%;left:75%;}35%{top:55%;left:55%;}80%{top:40%;left:12%;}100%{top:35%;left: 33%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
 	</script>
 		<link rel="stylesheet" href="css/yangmao.css">
 	</head>
 	<body>
 		<div class="content" id="main">
 			<div class="top"><img src="img/head.png"/></div>
-			<div class="bottom"><img src="img/bottom.png"/></div>
-			<div class="ball1" id="a" onclick="change()"> </div>
-			<div class="ball2"><img src="img/ball.png"/></div>
-			<div class="ball3"><img src="img/ball.png"/></div>
-			<div class="ball4"><img src="img/ball.png"/></div>
-<!--			<div class="line1"><img src="img/line.png"/></div>-->
+			<div class="bottom">
+			<div id="ball1"  onclick="fall1()"> </div>
+			<div id="ball2" onclick="fall2()"></div>
+			<div id="ball3" onclick="fall3()"></div>
+			<div id="ball4" onclick="fall4()"></div>
+			</div>
+			
+			
+			<div class="line1"><img src="img/line.png"/></div>
 			<div class="line2"><img src="img/line.png"/></div>
 			<div class="line3"><img src="img/line.png"/></div>
 			<div class="line4"><img src="img/line.png"/></div>
-			<div class="t"><img src="img/storelight.png"/></div>
+			<div class="t"></div>
 		</div>
 	</body>
 </html>
