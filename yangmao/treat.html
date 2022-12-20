@@ -4,9 +4,55 @@
 		<meta charset="utf-8">
 		<title>羊毛处理厂</title>
 		<script type="text/javascript">
-//	function change(){
-//		document.getElementsById("ball1").style.backgroundImage="";
-//	}
+
+	function line1(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes line1{0%{top:35%;left: 33%;}40%{top:20%;left:70%;}100%{top:3%;left: 12%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function line2(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes line2{0%{top:35%;left: 33%;}40%{top:20%;left:70%;}100%{top:3%;left: 12%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function line3(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes line3{0%{top:35%;left: 33%;}40%{top:20%;left:70%;}100%{top:3%;left: 12%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function line4(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes line4{0%{top:35%;left: 33%;}40%{top:20%;left:70%;}100%{top:3%;left: 12%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
 	function fall1(){
 				// js创建@keyframes，设定羊毛球的位移位置
 				const keyframes = '@keyframes ball1{0%{top:80%;left:2%;}35%{top:55%;left:55%;}80%{top:40%;left:12%;}100%{top:35%;left: 33%;}}';
@@ -55,6 +101,54 @@
 				// 将style样式存放到head标签
 				document.getElementsByTagName('head')[0].appendChild(style);
 			}
+	function back1(){
+				// js创建@keyframes，设定羊线团的位移位置
+				const keyframes = '@keyframes back1{0%{top:3%;left: 12%;}100%{top:80%;left:2%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function back2(){
+				// js创建@keyframes，设定羊线团的位移位置
+				const keyframes = '@keyframes back2{0%{top:3%;left: 12%;}100%{top:80%;left:25%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function back3(){
+				// js创建@keyframes，设定羊线团的位移位置
+				const keyframes = '@keyframes back3{0%{top:3%;left: 12%;}100%{top:80%;left:50%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
+	function back4(){
+				// js创建@keyframes，设定羊线团的位移位置
+				const keyframes = '@keyframes back4{0%{top:3%;left: 12%;}100%{top:80%;left:75%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+			}
 	</script>
 		<link rel="stylesheet" href="css/yangmao.css">
 	</head>
@@ -62,17 +156,17 @@
 		<div class="content" id="main">
 			<div class="top"><img src="img/head.png"/></div>
 			<div class="bottom">
-			<div id="ball1"  onclick="fall1()"> </div>
-			<div id="ball2" onclick="fall2()"></div>
-			<div id="ball3" onclick="fall3()"></div>
-			<div id="ball4" onclick="fall4()"></div>
+			<div id="ball1"  onclick="fall1();line1()"> </div>
+			<div id="ball2" onclick="fall2();line2()"></div>
+			<div id="ball3" onclick="fall3();line3()"></div>
+			<div id="ball4" onclick="fall4();line4()"></div>
 			</div>
 			
 			
-			<div class="line1"><img src="img/line.png"/></div>
-			<div class="line2"><img src="img/line.png"/></div>
-			<div class="line3"><img src="img/line.png"/></div>
-			<div class="line4"><img src="img/line.png"/></div>
+			<div class="line1" onclick="back1();"></div>
+			<div class="line2" onclick="back2()"></div>
+			<div class="line3" onclick="back3()"></div>
+			<div class="line4" onclick="back4()"></div>
 			<div class="t"></div>
 		</div>
 	</body>
