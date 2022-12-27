@@ -1,0 +1,140 @@
+*{
+	height: 100%;
+	width: 100%;
+}
+body{
+	height:100%;
+   	background-image: url(../img/bg.PNG);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position: center 0;
+	display: flex;
+	position: relative;
+	z-index: 0;	
+}
+.content{
+	height:100%;
+   	background-image: url(../img/frame.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	background-position: center 0;
+	display: flex;
+	position: relative;
+	z-index: 0;
+}
+.fr{
+	background-image: url(../img/tteat.PNG);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	width: 100%;
+ 	height: 100%;
+	top:0%;
+	left: 0%;
+	z-index:2 ;
+	}
+.left{
+	background-image: url(../img/ll.PNG);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	width: 40%;
+ 	height: 40%;
+	top:38%;
+	left: 5%;
+	z-index:3;
+}
+.right{
+	background-image: url(../img/rr.PNG);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	width: 35%;
+ 	height: 35%;
+	top:40%;
+	left: 58%;
+	z-index:3;
+}
+.d{
+	background-image: url(../img/bot.PNG);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	width: 35%;
+ 	height: 15%;
+	top:15%;
+	left: 30%;
+	z-index:3;
+}
+.b{
+	background-image: url(../img/bt.PNG);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	width: 20%;
+ 	height:15%;
+	top:28%;
+	left:38%;
+	z-index:3;
+}
+
+.ok{
+	background-image: url(../img/ok.PNG);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	width: 15%;
+ 	height:15%;
+	top:23%;
+	left: 40%;
+	z-index:3;
+}
+    /*#img  
+    {  
+        width:100%;  
+        height:50%;  */
+        /*margin:0px auto;  
+        position:relative;  
+        overflow:hidden;  
+        margin-left:auto;  
+        margin-right:auto;  
+    	z-index:3;
+    }  
+    #img ul  
+    {  
+        list-style-type:none;  
+        position: absolute;  
+        padding:0px;  
+        margin:0px;  
+        float:left;
+        z-index:3;  
+    }  */
+    /*#img ul li  
+    {  
+    	top: 5%;
+		left: 30%;
+    	z-index:3;
+        height:18%;  
+        width:35%;  
+        position:absolute;
+        z-index:3;   
+    }  */
+   #img{
+   	top: 5%;
+		left: 30%;
+    	z-index:3;
+        height:18%;  
+        width:35%;  
+        position:absolute;
+        z-index:3; 
+    background-image: url("../img/c3.PNG");
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+   }
