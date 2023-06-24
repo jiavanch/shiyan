@@ -1,0 +1,28 @@
+ /* 样式重置 */
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* 设置背景图片全屏显示 */
+body {
+	background-image: url("../img/index(1).jpg");
+	background-size: cover;
+	/* background-position: center; */
+	background-repeat: no-repeat;
+}
+
+/* 设置按钮样式 */
+.button {
+	display: inline-block;
+	background-color: transparent;
+	margin-top: 350px;
+	margin-left: 60%;
+	width: 300px;
+	height: 120px;
+	background-image: url("../img/click.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border: none;
+	cursor: pointer;
+}
