@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+		function fall1(){
+				// js创建@keyframes，设定羊毛球的位移位置
+				const keyframes = '@keyframes boy{0%{top:46%;left:2%;}100%{top:46%;left: 20%;}}';
+				// 创建style标签
+				const style = document.createElement('style');
+				// 设置style属性
+				style.type = 'text/css';
+				//将 keyframes样式写入style内
+				style.innerHTML = keyframes;
+				// 将style样式存放到head标签
+				document.getElementsByTagName('head')[0].appendChild(style);
+				var person1 = document.querySelector(".person1");
+				var person2 = document.querySelector(".person2");
+  
+				person1.classList.remove("hidden");
+			}
+		function showPerson2() {
+  var person1 = document.querySelector(".person1");
+  var person2 = document.querySelector(".person2");
+  
+  person1.classList.add("hidden");
+  person2.classList.remove("hidden");
+}
+
+function showPerson1() {
+  var person1 = document.querySelector(".person1");
+  var person2 = document.querySelector(".person2");
+  
+  person2.classList.add("hidden");
+  person1.classList.remove("hidden");
+}
+		</script>
+		<link rel="stylesheet" href="css/science.css">
+	</head>
+	<body>
+		<div class="content" id="main">
+			<div id="boy" onclick="fall1()"> </div>
+			<div id="dialogue">
+  				<div class="person1 hidden">
+    				<p class="message1">学生：爷爷，不能扔那！</p>
+    				<button class="next-button" onclick="showPerson2()">Next</button>
+ 				 </div>
+  				<div class="person2 hidden">
+    			<p class="message2">爷爷：嗯？为什么？</p>
+    			<button class="next-button" onclick="showPerson1()">Next</button>
+ 				 </div>
+			</div>
+			<div id='trash'></div>
+			<div id='old'></div>
+			
+	</body>
+</html>
