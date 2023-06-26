@@ -1,0 +1,97 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+/* 设置背景图片全屏显示 */
+
+body {
+	background-image: url("../img/school.jpg");
+	background-size: cover;
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	z-index: 0;
+}
+#boy{
+	background-image: url(../img/boy.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	top:46%;
+    left:2%;
+  	width: 40%;
+ 	height: 50%;
+ 	animation: boy 1.5s ease-in 0s 1 forwards;
+ 	z-index: 2;
+}
+#trash{
+	background-image: url(../img/bin.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	top:64%;
+    left:45%;
+  	width: 40%;
+ 	height: 30%;
+ 	z-index: 1;
+}
+#old{
+	background-image: url(../img/old.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	top:46%;
+    left:83%;
+  	width: 15%;
+ 	height: 50%;
+ 	z-index: 2;
+}
+.person1 {
+	background-image:url(../img/dh2.png);
+	background-repeat: no-repeat;
+	height:40%;
+	width: 50%;
+	top:35%;
+	left:45%;
+	position: absolute;
+	z-index: 2;
+}
+.message1{
+	position: absolute;
+	top:35%;
+	left: 15%;
+	font-size: 35px;
+}
+.person2 {
+	background-image:url(../img/dh2.png);
+	background-repeat: no-repeat;
+	height:40%;
+	width: 50%;
+	top:35%;
+	left:45%;
+	position: absolute;
+	z-index: 2;
+}
+.message2{
+	position: absolute;
+	top:35%;
+	left: 15%;
+	font-size: 35px;
+}
+.hidden {
+  display: none;
+}
+
+.next-button {
+  margin-top: 5px;
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top:65%;
+  left:50%;
+  font-size: 20px;
+}
