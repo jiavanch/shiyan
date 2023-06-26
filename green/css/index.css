@@ -1,0 +1,99 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* 背景设置 渐渐变模糊 */
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/index.png');
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  filter: blur(0px);
+  animation: blurAnimation 5s forwards;
+}
+
+@keyframes blurAnimation {
+  0% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(0px);
+  }
+  60% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(4px);
+  }
+}
+
+.background-container:hover {
+  animation-play-state: paused;
+}
+
+/* 标题 */
+.title {
+  width: 80%;
+  height: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  background-image: url('../img/title.png');
+  background-size: cover;
+  background-position: center center;
+  filter: blur(10px); /* 初始模糊度 */
+  opacity: 0; /* 初始透明度为隐藏 */
+  animation: fadeInAndBlur 5s linear forwards; 
+}
+
+@keyframes fadeInAndBlur {
+  0% {
+    filter: blur(10px); /* 初始模糊度 */
+    opacity: 0; /* 初始透明度 */
+  }
+  100% {
+    filter: blur(0); /* 最终模糊度为0，清晰度恢复 */
+    opacity: 1; /* 最终完全显示 */
+  }
+}
+
+/* 进入按钮 */
+#button {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 49px;
+  height: 49px;
+  background-image: url('../img/enter.png');
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  filter: blur(10px); /* 初始模糊度 */
+  opacity: 0; /* 初始透明度为隐藏 */
+  animation: fadeInAndBlurs 8s linear forwards; 
+}
+
+@keyframes fadeInAndBlurs {
+  0% {
+    filter: blur(10px); /* 初始模糊度 */
+    opacity: 0; /* 初始透明度 */
+  }
+  90% {
+    filter: blur(10px); /* 初始模糊度 */
+    opacity: 0; /* 初始透明度 */
+  }
+  100% {
+    filter: blur(0); /* 最终模糊度为0，清晰度恢复 */
+    opacity: 1; /* 最终完全显示 */
+  }
+}
