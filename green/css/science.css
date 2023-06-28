@@ -50,36 +50,48 @@ body {
  	height: 50%;
  	z-index: 2;
 }
-.person1 {
-	background-image:url(../img/dh2.png);
-	background-repeat: no-repeat;
-	height:40%;
-	width: 50%;
+/*#dialogue{
+	position: fixed;
+	height:28%;
+	width: 30%;
 	top:35%;
 	left:45%;
-	position: absolute;
 	z-index: 2;
+}*/
+.person1 {
+
+	position: fixed;
+	height:28%;
+	width: 30%;
+	top:35%;
+	left:45%;
+	z-index: 2;
+	border: 10px solid gray;
+	border-radius: 20px;
+  	background-color: gainsboro;
 }
 .message1{
 	position: absolute;
-	top:35%;
-	left: 15%;
+	top:5%;
+	left: 2%;
 	font-size: 35px;
+	
 }
 .person2 {
-	background-image:url(../img/dh2.png);
-	background-repeat: no-repeat;
-	height:40%;
-	width: 50%;
+position: fixed;
+	height:28%;
+	width: 30%;
 	top:35%;
 	left:45%;
-	position: absolute;
 	z-index: 2;
+	border: 10px solid gray;
+	border-radius: 20px;
+  	background-color: gainsboro;
 }
 .message2{
 	position: absolute;
-	top:35%;
-	left: 15%;
+	top:5%;
+	left: 2%;
 	font-size: 35px;
 }
 .hidden {
@@ -94,4 +106,55 @@ body {
   top:65%;
   left:50%;
   font-size: 20px;
+}
+.person3 {
+position: fixed;
+	height:28%;
+	width: 30%;
+	top:35%;
+	left:45%;
+	z-index: 2;
+	border: 10px solid gray;
+	border-radius: 20px;
+  	background-color: gainsboro;
+}
+.message3{
+	position: absolute;
+	top:5%;
+	left: 2%;
+	font-size: 35px;
+}
+.person4 {
+position: fixed;
+	height:28%;
+	width: 30%;
+	top:35%;
+	left:45%;
+	z-index: 2;
+	border: 10px solid gray;
+	border-radius: 20px;
+  	background-color: gainsboro;
+}
+.message4{
+	position: absolute;
+	top:5%;
+	left: 2%;
+	font-size: 35px;
+}
+.person5 {
+	position: fixed;
+	height:28%;
+	width: 30%;
+	top:35%;
+	left:45%;
+	z-index: 2;
+	border: 10px solid gray;
+	border-radius: 20px;
+  	background-color: gainsboro;
+}
+.message5{
+	position: absolute;
+	top:5%;
+	left: 2%;
+	font-size: 25px;
 }
