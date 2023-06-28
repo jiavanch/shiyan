@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>垃圾分类</title>
 		<script type="text/javascript">
 		function fall1(){
 				const keyframes = '@keyframes boy{0%{top:46%;left:2%;}100%{top:46%;left: 20%;}}';
@@ -20,23 +20,23 @@
 				person1.classList.remove("hidden");
 			}
 		function showPerson2() {
-  var person1 = document.querySelector(".person1");
-  var person2 = document.querySelector(".person2");
+ 	 var person1 = document.querySelector(".person1");
+ 	 var person2 = document.querySelector(".person2");
   
-  person1.classList.add("hidden");
-  person2.classList.remove("hidden");
+  	person1.classList.add("hidden");
+  	person2.classList.remove("hidden");
 }
 
-function showPerson3() {
-  var person3 = document.querySelector(".person3");
-  var person2 = document.querySelector(".person2");
+		function showPerson3() {
+ 	 var person3 = document.querySelector(".person3");
+	  var person2 = document.querySelector(".person2");
   
-  person2.classList.add("hidden");
-  person3.classList.remove("hidden");
+  	person2.classList.add("hidden");
+  	person3.classList.remove("hidden");
 }
-function showPerson4() {
-  var person4 = document.querySelector(".person4");
-  var person3 = document.querySelector(".person3");
+		function showPerson4() {
+  	var person4 = document.querySelector(".person4");
+  	var person3 = document.querySelector(".person3");
   
   person3.classList.add("hidden");
   person4.classList.remove("hidden");
@@ -54,7 +54,7 @@ function showPerson5() {
 	<body>
 		<div class="content" id="main">
 			<div id="boy" onclick="fall1()"> </div>
-			<div id="dialogue">
+			
   				<div class="person1 hidden">
     				<p class="message1">学生：爷爷，不能扔在那个垃圾箱！</p>
     				<button class="next-button" onclick="showPerson2()">Next</button>
@@ -64,20 +64,20 @@ function showPerson5() {
     			<button class="next-button" onclick="showPerson3()">Next</button>
  				 </div>
  				 <div class="person3 hidden">
- 				 <p class="message3">学生：我们应该按照垃圾分类的标准<br>进行分类。</p>
+ 				 <p class="message3">学生：我们应该按照垃圾分类的标准进行分类。</p>
     			<button class="next-button" onclick="showPerson4()">Next</button>
  				 </div>
  				 <div class="person4 hidden">
- 				 <p class="message4">爷爷：对不起，我不知道垃圾分类的<br>标准，你能告诉我怎么分吗？</p>
+ 				 <p class="message4">爷爷：不好意思，爷爷不知道垃圾分类的标准，你能告诉爷爷怎么分吗？</p>
     			<button class="next-button" onclick="showPerson5()">Next</button>
  				 </div>
  				 <div class="person5 hidden">
- 				 <p class="message5">您刚才扔的是有害垃圾箱，有害垃圾是指对人体健<br>康或环境有危害的垃圾，
- 				如电池、荧光灯管、过期<br>药物、化妆品等。需要单独收集和处理，投放到指定<br>
- 				的有害垃圾容器中。而这些纸巾、口罩是其他垃圾,<br>玻璃瓶是可回收垃圾。</p>
- 				
+ 				 <p class="message5">您刚才扔的是有害垃圾箱，有害垃圾是指对人体健康或环境有危害的垃圾，
+ 				如电池、荧光灯管、过期药物、化妆品等。需要单独收集和处理，投放到指
+ 				定的有害垃圾容器中。而这些纸巾、口罩是其他垃圾,玻璃瓶是可回收垃圾。</p>
+ 				 <a href="https://jiavanch.github.io/shiyan/green/kepu"><button class="next-button" >更多</button></a>
  				 </div>
-			</div>
+			
 			<div id='trash'></div>
 			<div id='old'></div>
 			
