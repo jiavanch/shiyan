@@ -4,12 +4,12 @@
 }
 
 html, body {
-  position: relative;
-  height: 100%;
-  margin: 0;
-  background-image: url('../img/testbackground.png');
-  background-size: cover;
-  background-position: center center;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    background-image: url('../img/testbackground.png');
+    background-size: cover;
+    background-position: center center;
 }
 
 .contain{
@@ -23,17 +23,17 @@ html, body {
 }
 
 .title {
-  width: 80%;
-  height: 10%;
-  background-size: cover;
-  background-position: center center;
-  font-size: 40px;
-  font-weight: 600;
-  display: flex;
-  align-items: center; /* 垂直居中对齐 */
-  justify-content: center;  /* 水平居中对齐 */
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #292828;
+    width: 80%;
+    height: 10%;
+    background-size: cover;
+    background-position: center center;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    justify-content: center;  /* 水平居中对齐 */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #292828;
 }
 
 .content{
@@ -48,11 +48,11 @@ html, body {
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.questions{
+.questionsContent{
 	display: flexbox;
 	width: 65%;
 	padding: 40px 20px;
-	background-color: rgba(105, 196, 64, 0.4);
+	background-color: rgba(105, 196, 64, 0.3);
 	border-radius: 15px;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -61,8 +61,159 @@ html, body {
 	display: flexbox;
 	width: 20%;
 	padding: 40px 20px;
-	background-color: rgba(187, 239, 164, 0.9);
+	background-color: rgba(187, 239, 164, 0.7);
 	border-radius: 15px;
 	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.number-f1{
+	font-weight: bold;
+	font-size: 18px;
+	padding: 10px 5px;
+	padding-left: 15px;
+}
+
+#question-sequence{
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+#timer{
+	width: 90%;
+	height: 10%;
+	padding: 0 5px;
+	font-size: 20px;
+	text-align: center;
+}
+
+#questions{
+	width: 85%;
+	height: 85%;
+	padding: 5px;
+	font-size: 15px;
+}
+
+/* .buttons{
+	width: 90%;
+	height: 15%;
+	padding: 0 5px;
+}
+
+.buttons-f1{
+	width: 60%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+#submitBtn{
+	background-color: transparent;
+    color: #515151;
+    width: 100%;
+    cursor: pointer;
+	border: none;
+	font-size: 18px;
+	place-items: center; 
+} */
+
+.question-type {
+	display: flexbox;
+	margin-top: 20px;
+	margin-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.question-content {
+    font-size: 20px;
+    color: #333;
+	margin-left: 20px;
+}
+
+.choices {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.choices li {
+	width: 20%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+	border-radius: 15px;
+	margin-left: 0px;
+	background-color: rgba(248, 246, 231, 0.5);
+	padding: 5px 0;
+	padding-left: 15px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.choices li:hover{
+	transform: scale(1.2); /* 放大为原来的 1.2 倍 */
+	color: darker; /* 颜色变深 */
+	background-color: rgba(248, 246, 231, 0.8);
+}
+
+/* 以下是题号序列 */
+#question-sequence {
+    margin-bottom: 10px;
+}
+
+#question-sequence span {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: lightgray;
+	margin-right: 10px; /* 题号间隔为10px */
+	margin-bottom: 10px; /* 每行底部间隔为10px */
+	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+	transition: transform 0.2s, background-color 0.2s;
+}
+
+#question-sequence span.current {
+	background-color: darkgray;
+	transform: scale(1.2);
+}
+
+#question-sequence span.answered {
+	background-color: gray;
+}
+
+@media screen and (min-width: 768px) {
+    #question-sequence span {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        width: calc(25% - 15px);
+    }
+}
+
+.score {
+	display: flex;
+	align-items: center; /* 垂直居中对齐 */
+	justify-content: center;  /* 水平居中对齐 */
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+	margin-top: 60px;
+}
+
+.score-f1{
+	display: flex;
+	align-items: center; /* 垂直居中对齐 */
+	justify-content: center;  /* 水平居中对齐 */
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 60px;
+	margin-bottom: 10px;
+	color: red;
 }
 
