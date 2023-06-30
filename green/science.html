@@ -48,6 +48,13 @@ function showPerson5() {
   person4.classList.add("hidden");
   person5.classList.remove("hidden");
 }
+function showPerson6() {
+  var person5 = document.querySelector(".person5");
+  var person6 = document.querySelector(".person6");
+  
+  person5.classList.add("hidden");
+  person6.classList.remove("hidden");
+}
 		</script>
 		<link rel="stylesheet" href="css/science.css">
 	</head>
@@ -75,9 +82,13 @@ function showPerson5() {
  				 <p class="message5">您刚才扔的是有害垃圾箱，有害垃圾是指对人体健康或环境有危害的垃圾，
  				如电池、荧光灯管、过期药物、化妆品等。需要单独收集和处理，投放到指
  				定的有害垃圾容器中。而这些纸巾、口罩是其他垃圾,玻璃瓶是可回收垃圾。</p>
- 				 <a href="https://jiavanch.github.io/shiyan/green/kepu"><button class="next-button" >更多</button></a>
+ 				 <button class="next-button" onclick="showPerson6()">Next</button>
+ 				 
  				 </div>
-			
+				<div class="person6 hidden">
+ 				 <p class="message6">那让我们来做一个小测试，看一看我们对垃圾分类的了解有多少吧</p>
+    			<a href="https://jiavanch.github.io/shiyan/green/test"><button class="next-button" >测试</button></a>
+ 				 </div>
 			<div id='trash'></div>
 			<div id='old'></div>
 			
