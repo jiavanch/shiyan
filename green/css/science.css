@@ -158,3 +158,21 @@ position: fixed;
 	left: 2%;
 	font-size: 25px;
 }
+.person6 {
+	position: fixed;
+	height:28%;
+	width: 30%;
+	top:35%;
+	left:45%;
+	z-index: 2;
+	border: 10px solid gray;
+	border-radius: 20px;
+  	background-color: gainsboro;
+}
+.message6{
+	position: absolute;
+	top:5%;
+	left: 2%;
+	font-size: 35px;
+}
+
