@@ -170,7 +170,7 @@ html, body {
 	line-height: 35px;
 	text-align: center;
 	border-radius: 50%;
-	background-color: lightgray;
+	background-color: floralwhite;
 	margin-right: 10px; /* 题号间隔为10px */
 	margin-bottom: 10px; /* 每行底部间隔为10px */
 	font-weight: bold;
@@ -180,12 +180,12 @@ html, body {
 }
 
 #question-sequence span.current {
-	background-color: darkgray;
+	background-color: floralwhite;
 	transform: scale(1.2);
 }
 
 #question-sequence span.answered {
-	background-color: gray;
+	background-color: lightgoldenrodyellow;
 }
 
 @media screen and (min-width: 768px) {
@@ -216,4 +216,5 @@ html, body {
 	margin-bottom: 10px;
 	color: red;
 }
+
 
