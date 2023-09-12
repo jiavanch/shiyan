@@ -16,15 +16,18 @@
 				document.getElementsByTagName('head')[0].appendChild(style);
 				var person1 = document.querySelector(".person1");
 				var person2 = document.querySelector(".person2");
-  
-				person1.classList.remove("hidden");
+  				var cc=document.querySelector(".cl");
+				person1.classList.remove("hidden");  	
+				cc.classList.add("hidden");
 			}
 		function showPerson2() {
  	 var person1 = document.querySelector(".person1");
  	 var person2 = document.querySelector(".person2");
+ 	 
   
   	person1.classList.add("hidden");
   	person2.classList.remove("hidden");
+
 }
 
 		function showPerson3() {
@@ -61,7 +64,7 @@ function showPerson6() {
 	<body>
 		<div class="content" id="main">
 			<div id="boy" onclick="fall1()"> </div>
-			
+				<div class="cl"></div>
   				<div class="person1 hidden">
     				<p class="message1">学生：爷爷，不能扔在那个垃圾箱！</p>
     				<button class="next-button" onclick="showPerson2()">Next</button>
@@ -79,7 +82,7 @@ function showPerson6() {
     			<button class="next-button" onclick="showPerson5()">Next</button>
  				 </div>
  				 <div class="person5 hidden">
- 				 <p class="message5">您刚才扔的是有害垃圾箱，有害垃圾是指对人体健康或环境有危害的垃圾，
+ 				 <p class="message5">学生：您刚才扔的是有害垃圾箱，有害垃圾是指对人体健康或环境有危害的垃圾，
  				如电池、荧光灯管、过期药物、化妆品等。需要单独收集和处理，投放到指
  				定的有害垃圾容器中。而这些纸巾、口罩是其他垃圾,玻璃瓶是可回收垃圾。</p>
  				 <button class="next-button" onclick="showPerson6()">Next</button>
