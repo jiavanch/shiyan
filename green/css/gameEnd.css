@@ -1,0 +1,42 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    background-image: url('../img/clean.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+#textContainer{
+	width: 60%;
+	height: 50px;
+	padding-top: 100px;
+	font-size: 25px;
+}
+
+/* 进入按钮 */
+#button {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 49px;
+  height: 49px;
+  background-image: url('../img/enterd.png');
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+}
+
+#pass{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* 将元素自身的宽高度的一半作为偏移量 */
+	font-size:72px;
+	color:red;
+}
