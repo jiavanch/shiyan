@@ -258,3 +258,20 @@ renderQuestion();
 const timerDisplay = document.getElementById('timer');
 const timerDuration = 15;
 startTimer(timerDuration, timerDisplay);
+
+// 提交按钮点击事件
+// const submitBtn = document.getElementById('submitBtn');
+// submitBtn.addEventListener('click', () => {
+//   clearInterval(intervalId);
+//   handleAnswer(null);
+// });
+
+window.onload = function() {
+	var button = document.getElementById('button');
+	button.onclick = function() {
+		window.location.href = button.getAttribute('href');
+	};
+};
+
+
+
