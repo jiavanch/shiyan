@@ -244,7 +244,7 @@ targeth.addEventListener('drop', function(event) {
     } else if (data === 'myImage17') {
 		// 清除图片
 		image17.remove();
-		window.location.href = 'http://127.0.0.1:8848/green/gameEnd.html';
+		window.location.href = 'https://jiavanch.github.io/shiyan/green/gameEnd';
     } else if (data === 'myImage18') {
 		// 清除图片
 		image18.remove();
