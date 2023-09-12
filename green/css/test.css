@@ -180,7 +180,7 @@ html, body {
 }
 
 #question-sequence span.current {
-	background-color: floralwhite;
+	background-color: lightgrey;
 	transform: scale(1.2);
 }
 
@@ -215,6 +215,20 @@ html, body {
 	font-size: 60px;
 	margin-bottom: 10px;
 	color: red;
+}
+
+
+/* 进入按钮 */
+#button {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 49px;
+  height: 49px;
+  background-image: url('../img/enterd.png');
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
 }
 
 
