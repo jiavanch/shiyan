@@ -175,4 +175,18 @@ position: fixed;
 	left: 2%;
 	font-size: 35px;
 }
+.cl{
+	background-image: url(../img/cc.png);
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: 100% 100%;
+	position: absolute;
+	top:65%;
+    left:22%;
+  	width: 40%;
+ 	height: 50%;
+ 	z-index: 2;
+ 	max-width: 80px;
+ 	max-height: 100px;
+}
 
