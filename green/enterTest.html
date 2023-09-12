@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>进入测试</title>
+		<link rel="stylesheet" href="css/enterTest.css">
+	</head>
+	<body>
+		<div class="contain">
+			<div class="title">垃 圾 分 类 知 识 问 答</div>
+			<div class="content">
+				<div class="questionsContent">
+					<div id="textContainer"></div>
+					
+				</div>
+				<div class="number">
+				</div>
+				<a id="button" href="http://127.0.0.1:8848/green/test.html"></a>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		
+		window.onload = function() {
+		  var button = document.getElementById('button');
+		  button.onclick = function() {
+		    window.location.href = button.getAttribute('href');
+		  };
+		};
+		
+		function showText(text, containerId, delay) {
+		  var container = document.getElementById(containerId);
+		  var index = 0;
+		
+		  function displayNextChar() {
+		    if (index < text.length) {
+		      container.textContent += text.charAt(index);
+		      index++;
+		      setTimeout(displayNextChar, delay);
+		    }
+		  }
+		
+		  displayNextChar();
+		}
+		
+		// 调用函数开始显示文字
+		showText("总共有20道简单的垃圾分类单选题，每题有15秒的答题时间，每道题5分，共100分。快来测试一下你对垃圾分类知识的了解程度吧！", "textContainer", 100);
+	</script>
+</html>

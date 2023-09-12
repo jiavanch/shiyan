@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>游戏规则</title>
+		<link rel="stylesheet" href="css/enterGameRule.css">
+	</head>
+	<body>
+		<div class="container">
+			<div id="textContainer"></div>
+			<a id="button" href="http://127.0.0.1:8848/green/game.html"></a>
+		</div>
+	</body>
+	<script>
+		window.onload = function() {
+		  var button = document.getElementById('button');
+		  button.onclick = function() {
+		    window.location.href = button.getAttribute('href');
+		  };
+		};
+		
+		function showText(text, containerId, delay) {
+		  var container = document.getElementById(containerId);
+		  var index = 0;
+		
+		  function displayNextChar() {
+		    if (index < text.length) {
+		      container.textContent += text.charAt(index);
+		      index++;
+		      setTimeout(displayNextChar, delay);
+		    }
+		  }
+		
+		  displayNextChar();
+		}
+		
+		// 调用函数开始显示文字
+		showText("游戏规则：拖动垃圾到指定的垃圾桶，投入正确的话垃圾会消失，错误的话垃圾桶拒收，直到正确为止，加油哦！", "textContainer", 100);
+	</script>
+</html>
