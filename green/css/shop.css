@@ -1,0 +1,434 @@
+ *{
+ 	padding: 0;
+ 	margin: 0;
+ }
+  .div {
+    background: #f5ffeb;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-2 {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 41px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .img {
+    object-fit: cover;
+    object-position: center;
+    width: 20%;
+  }
+  .div-3 {
+    border-radius: 49px;
+    background: #fefffb;
+    margin-top: 46px;
+    margin-right: 5px;
+    padding-top: 19px;
+    padding-left: 20px;
+    padding-bottom: 39px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-4 {
+    margin-left: 3px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      margin-left: 3px;
+      margin-right: 3px;
+    }
+  }
+  .div-5 {
+    display: flex;
+  }
+  @media (max-width: 640px) {
+    .div-5 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(60% - 10px);
+    margin-left: 0px;
+  }
+  @media (max-width: 640px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .img-2 {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(40% - 10px);
+    margin-left: 20px;
+  }
+  @media (max-width: 640px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .div-6 {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-6 {
+      margin-top: 14px;
+    }
+  }
+  .img-3 {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+  }
+  .div-7 {
+    border-radius: 40px;
+    background: #f6f8f4;
+    margin-top: 74px;
+    padding-top: 40px;
+    padding-left: 19px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-family: Inria Serif, -apple-system, Roboto, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 27px;
+    margin-right: 16px;
+    margin-bottom: 87px;
+    line-height: 1.5;
+  }
+  .div-8 {
+    margin-top: 29px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+  .div-9 {
+    display: flex;
+  }
+  @media (max-width: 640px) {
+    .div-9 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .column-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(51% - 10px);
+    margin-left: 0px;
+  }
+  @media (max-width: 640px) {
+    .column-3 {
+      width: 100%;
+    }
+  }
+  .div-10 {
+    border-radius: 50px;
+    background: #fefffb;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-10 {
+      margin-top: 50px;
+    }
+  }
+  .img-4 {
+    object-fit: cover;
+    object-position: center;
+    width: 20%;
+  }
+  .i1{
+  	object-fit: initial;
+    object-position: center;
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+   transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.i1:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大图片 */
+}
+  .p1{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .t2{
+  	margin-top: 50px;
+  }
+    .i2{
+  	object-fit: initial;
+    object-position: center;
+    width: 40%;
+    margin-left:80px ;
+  }
+  .p2{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .column-4 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(49% - 10px);
+    margin-left: 20px;
+  }
+  @media (max-width: 640px) {
+    .column-4 {
+      width: 100%;
+    }
+  }
+  .div-11 {
+    border-radius: 50px;
+    background: #fefffb;
+    padding-top: 17px;
+    padding-left: 19px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-11 {
+      margin-top: 50px;
+    }
+  }
+  .img-5 {
+    object-fit: cover;
+    object-position: center;
+    width: 23%;
+  }
+  .div-12 {
+    margin-top: 50px;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+    .i3{
+  	object-fit: initial;
+    object-position: center;
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+   transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.i3:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大图片 */
+}
+  .p3{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .t4{
+  	margin-top: 50px;
+  }
+    .i4{
+  	object-fit: initial;
+    object-position: center;
+    width: 40%;
+    margin-left:80px ;
+  }
+  .p4{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .div-13 {
+    display: flex;
+  }
+  @media (max-width: 640px) {
+    .div-13 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .column-5 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(51% - 10px);
+    margin-left: 0px;
+  }
+  @media (max-width: 640px) {
+    .column-5 {
+      width: 100%;
+    }
+  }
+  .div-14 {
+    border-radius: 50px;
+    background: #fefffb;
+    margin-top: 9px;
+    padding-top: 19px;
+    padding-left: 16px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-14 {
+      margin-top: 50px;
+    }
+  }
+  .img-6 {
+    object-fit: cover;
+    object-position: center;
+    width: 20%;
+  }
+    .i5{
+  	object-fit: initial;
+    object-position: center;
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+   transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.i5:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大图片 */
+}
+  .p5{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .t6{
+  	margin-top: 50px;
+  }
+    .i6{
+  	object-fit: initial;
+    object-position: center;
+    width: 42%;
+    margin-left:80px ;
+  }
+  .p6{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .column-6 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(49% - 10px);
+    margin-left: 20px;
+  }
+  @media (max-width: 640px) {
+    .column-6 {
+      width: 100%;
+    }
+  }
+  .div-15 {
+    border-radius: 50px;
+    background: #fefffb;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-15 {
+      margin-top: 50px;
+    }
+  }
+  .img-7 {
+    object-fit: cover;
+    object-position: center;
+    width: 36%;
+  }
+      .i7{
+  	object-fit: initial;
+    object-position: center;
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+   transition: transform 0.3s ease; /* 添加过渡效果 */
+}
+
+.i7:hover {
+  transform: scale(1.2); /* 鼠标悬停时放大图片 */
+}
+  .p7{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .t8{
+  	margin-top: 50px;
+  }
+    .i8{
+  	object-fit: initial;
+    object-position: center;
+    width: 50%;
+    margin-left:10px ;
+  }
+  .p8{
+    font-weight: 400;
+    font-size: 27px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
